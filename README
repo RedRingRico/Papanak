@@ -1,10 +1,12 @@
 OVERVIEW
 
-Papanak is a cross-platform (Linux, Windows, and Pandora) cooperative survival
-horror game in a first person perspective.
+Papanak is a cross-platform (Linux, Windows, and Pandora) arena-based first
+person shooter.
 
-The focus of the game is on team work to get through a city overrun with undead
-humans.  Your team needs to create some kind of signal for a helicopter to pick
-up and land by if you are to be rescued.  There is a set amount of time until
-the helicopter arrives and you need to ensure you are there when it lands.
+This is not a twitch shooter, it's more of a semi-tactical shooter.  Several
+game modes will be available; deathmatch, team deathmatch, capture the flag,
+bombing run, and irregular orb.
+
+The game will support up to 20 players over a network, as well as bot
+characters.
 
