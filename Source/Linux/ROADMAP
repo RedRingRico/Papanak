@@ -1,0 +1,50 @@
+###############################################################################
+DISCLAIMER
+The informaiton in this document is subject to change as the project evolves
+###############################################################################
+
+PREFACE
+This document shall describe the goals and objectives of Project Papanak.
+
+
+RELEASE ROADMAP OVERVIEW
+------------------------
+PROTOTYPE
+The core game mechanics will be in place by the time this release is out.
+
+ALPHA
+At this point, the game will be feature complete.
+
+BETA
+Bugs will be fixed at this stage
+
+GOLD
+Content complete and code complete
+
+
+GAME FEATURE LIST
+-----------------
+Game states
+Game state manager
+Weapons
+Items
+Inventory
+Arenas
+Network play
+Scripting
+Dismemberment effect
+One-off power items
+Heads up display
+
+
+PROTOTYPE FEATURE ROADMAP
+-------------------------
+Player moving in a first-person perspective with a weapon in their hand
+Two players moving around in the same area over a network
+Weapon projectile hit detection and score accumulation
+Item pickups
+Power items
+Arenas selectable and playable [RELIES ON EXTERNAL TOOL]
+Explosive weapons (grenades, rocket lauchers)
+Ammuntion management
+
