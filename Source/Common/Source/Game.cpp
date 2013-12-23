@@ -2,7 +2,8 @@
 #include <cstring>
 #include <System/Memory.hpp>
 #include <unistd.h>
-
+#include <GameStateManager.hpp>
+#include <System/Debugger.hpp>
 namespace Papanak
 {
 	Game::Game( )
@@ -24,10 +25,7 @@ namespace Papanak
 
 	ZED_UINT32 Game::Execute( )
 	{
-		// NOT CROSS-PLATFORM!
-		XEvent Event;
 		ZED::System::WINDOWDATA	WindowData = m_pWindow->WindowData( );
-		// !NOT CROSS-PLATFORM
 		
 		m_Running = ZED_TRUE;
 
@@ -35,13 +33,7 @@ namespace Papanak
 		{
 			m_pWindow->Update( );
 			m_pInputManager->Update( );
-
-			// The reason for this loop is that the left over messages in the
-			// queue need to be processed
-			while( XPending( WindowData.pX11Display ) > 0 )
-			{
-				XNextEvent( WindowData.pX11Display, &Event );
-			}
+			m_pWindow->FlushEvents( );
 
 			if( m_Keyboard.IsKeyDown( K_ESCAPE ) )
 			{

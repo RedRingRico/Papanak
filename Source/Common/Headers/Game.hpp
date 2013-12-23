@@ -10,6 +10,7 @@
 
 namespace Papanak
 {
+	class GameStateManager;
 	class Game
 	{
 	public:
@@ -30,6 +31,8 @@ namespace Papanak
 		ZED::Renderer::CanvasDescription	m_Canvas;
 
 		ZED_BOOL	m_Running;
+
+		GameStateManager	*m_pGameStateManager;
 	};
 }
 
